@@ -15,6 +15,7 @@ brand = {
 brand["number_stores"] = 2
 print(brand)
 #3
+
 #4
 brand["country_creation"] = "Spain"
 print(brand)
@@ -26,3 +27,18 @@ print(brand)
 del brand["creation_date"]
 #7
 print(brand["international_competitors"][-1])
+#8
+print(brand["major_color"]["US"])
+#9
+print(len(brand))
+#10
+print(brand.keys())
+#11
+more_on_zara = {
+    "creation_date": 1975,
+    "number_stores": 10000
+}
+#12
+brand.update(more_on_zara)
+#13
+print(brand["number_stores"])  # Output: 10000 (overwrites the previous value)
