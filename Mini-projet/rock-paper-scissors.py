@@ -24,7 +24,6 @@ def print_results(results):
 
 
 def main():
-    """Main function to run the game"""
     results = {"win": 0, "loss": 0, "draw": 0}
 
     while True:
@@ -36,7 +35,6 @@ def main():
             results[result] += 1
 
         elif choice == "2":
-            # Show current scores
             print_results(results)
 
         elif choice == "3":
